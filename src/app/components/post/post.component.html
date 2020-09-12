@@ -1,0 +1,55 @@
+<div class="card ms-3" style="max-width: 18rem">
+  <img *ngIf="post.image" [src]="post.image" class="card-img-top" />
+  <div class="card-body">
+    <h5
+      class="card-title links cursor"
+      data-toggle="modal"
+      data-target="#modal"
+      (click)="selectUser(post.owner)"
+    >
+      {{ post.owner.firstName }} {{ post.owner.lastName }}
+    </h5>
+    <h6 class="card-title">Descripción:</h6>
+    <p class="card-text">{{ post.text }}</p>
+
+    <h6 class="card-title">Tags:</h6>
+    <p class="card-text">
+      <span
+        *ngFor="let tag of post.tags"
+        class="ml-1 badge badge-primary cursor"
+        (click)="filterTag(tag)"
+        >#{{ tag }}</span
+      >
+    </p>
+
+    <div class="row">
+      <div class="col-4">
+        <p class="card-text">
+          <i class="far fa-thumbs-up"></i>
+          {{ post.likes }}
+        </p>
+      </div>
+      <div class="col-8">
+        <p
+          class="card-text links cursor"
+          data-toggle="modal"
+          data-target="#modal-comments"
+          (click)="loadComments(post.id)"
+        >
+          <i class="far fa-comments"></i>
+          Comentarios
+        </p>
+      </div>
+    </div>
+    <br />
+
+    <a *ngIf="post.link != null" [href]="post.link" target="_blank"
+      >Ver Página</a
+    >
+    <p class="card-text">
+      <small class="text-muted"
+        >Publicación: {{ post.publishDate | date: "dd/MM/yyyy" }}
+      </small>
+    </p>
+  </div>
+</div>

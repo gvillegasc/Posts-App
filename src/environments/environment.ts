@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  URL_BASE: 'https://dummyapi.io/data/api',
+  APP_ID: '5f5c28368ee3bf469af81d10',
 };
 
 /*

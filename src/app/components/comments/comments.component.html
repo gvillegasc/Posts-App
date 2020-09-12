@@ -1,0 +1,24 @@
+<div class="modal-body">
+  <div
+    *ngIf="comments.length == 0"
+    class="row animated fadeIn p-2"
+    class="modal-body"
+  >
+    <div class="col-sm-12">
+      <div class="alert alert-danger text-center" role="alert">
+        <br />
+        <i class="far fa-frown fa-2x"></i>
+
+        <br />
+
+        <h4>No hay comentarios</h4>
+        <br />
+      </div>
+    </div>
+  </div>
+
+  <app-comment
+    *ngFor="let comment of comments"
+    [comment]="comment"
+  ></app-comment>
+</div>

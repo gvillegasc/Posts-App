@@ -1,0 +1,20 @@
+<div class="media">
+  <div class="media mb-1">
+    <img
+      [src]="comment.owner.picture"
+      class="align-self-center mr-3"
+      [alt]="comment.owner.firstName"
+    />
+    <div class="media-body">
+      <h5 class="mt-0">Center-aligned media</h5>
+      <p>
+        {{ comment.message }}
+      </p>
+      <p class="mb-0">
+        <small class="text-muted"
+          >Publicación: {{ comment.publishDate | date: "dd/MM/yyyy" }}
+        </small>
+      </p>
+    </div>
+  </div>
+</div>
