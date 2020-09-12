@@ -2,6 +2,12 @@
 
 Este es un proyecto hecho con Angular en su versión 10.1.1, consta de aplicación para ver posts de mascotas de diferentes personas en el mundo.
 
+### Links de Aplicación
+
+```
+https://gvillegasc.github.io/Posts-App/
+```
+
 ## Pre-requisitos📋
 
 Para probar este proyecto se necesita las siguientes herramientas de software.
@@ -32,7 +38,7 @@ Para instalar angular ejecutar el siguiente comando en la terminal del equipo:
 
 ## Instalación del Proyecto 🔧
 
-Clonar el siguiente repositorio: (gerardo-villegas.com)
+Clonar el siguiente repositorio: (https://github.com/gvillegasc/Posts-App)
 
 Acceder a la carpeta del proyecto clonado, y ejecutar el comando `npm install` para decargar los paquete de Node.JS.
 
@@ -59,7 +65,7 @@ Ejecutar `npm run build` o `ng build` para generar el proyecto en modo producci�
 Imagenes de la aplicación.
 
 Link de demostración.
-(gerardo-villegas.com)
+(https://gvillegasc.github.io/Posts-App/)
 
 ![1](readme-img/1.PNG)
 ![2](readme-img/2.PNG)

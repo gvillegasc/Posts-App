@@ -13,8 +13,6 @@ export class PostService {
   constructor(private http: HttpClient) {}
 
   loadPosts() {
-    console.log(this.url_base);
-    console.log(this.app_id);
     let url = this.url_base + '/post';
     return this.http
       .get(url, {
